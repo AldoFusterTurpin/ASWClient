@@ -1,1 +1,148 @@
-/* You can add global styles to this file, and also import other style files */
+/*Parts comunes a tot tipus de pantalles*/
+*{
+    margin: 10;
+    padding: 0;
+    box-sizing: content-box;
+  }
+  
+  header, main, footer{
+    width: 100%;
+    background-color: #f6f6ef;
+    font-family: Verdana, Geneva, sans-serif;
+  }
+  
+  .header-nav {
+    font-weight: bold;
+  }
+  
+  /*
+  new:active {
+    .header-nav {
+      color: white;
+    }
+  }
+  .new-nav {
+    color: white;
+  }
+  [href$="/new"] {
+    .new-nav {
+      color: white;
+    }
+  }
+  */
+  
+  #header-links{
+    width: 100%;
+    background-color: #ff6600;
+    color: black;
+    font-size: 10pt;
+  }
+  
+  #header-links>img{
+    width: 18px;
+    height: 18px;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+  
+  #header-links>a{
+    color: black;
+    font-size: 12pt;
+    text-decoration: none;
+  }
+  
+  
+  .active-link{
+    color: white;
+    font-size: 12pt;
+  }
+  
+  #header-links>a:first-child{
+    font-weight: bold; 
+  }
+  
+  .login-link{
+    float: right;
+  }
+  
+  footer>hr{
+    color: #ff6600;
+    background-color: #ff6600;
+    border-color: #ff6600;
+    border-style: solid;
+  }
+  
+  footer>p{
+    text-align: center;
+    font-size: 10pt;
+  }
+  
+  .athing {
+    font-size: 10pt;
+    color:#000000;
+  }
+  
+  .count {
+    font-size: 10pt;
+    color:#828282;
+  }
+  
+  .subtext span{
+    font-size: 7pt;
+    color:#828282;
+  
+  }
+  
+  fieldset{
+    border: none;
+    margin: 5px;
+    margin-left: 15px;
+  }
+  
+  legend{
+    font-weight: bolder;
+    margin-left: -10px;
+  }
+  
+  button{
+    display: block;
+  }
+  
+  fieldset div {
+    display: block;
+  }
+  
+  fieldset div > * {
+    margin: 5px;
+  }
+  
+  .voted{
+    display: none;
+  }
+  
+  .unvoted{
+    display: none;
+  }
+  /* Pantalles petites desde 750 px*/
+  @media (min-width: 750px) {
+    header, main, footer{
+      width: 80%;
+      margin: auto;
+    }
+    
+    #header-links{
+      padding: 2px;
+      font-size: 10pt;
+    }
+  
+    #header-links>a{
+      padding: 0px;
+      font-size: 11pt;
+    }
+  
+    .active-link{
+      color: white;
+      font-size: 11pt;
+    }
+  
+  }
